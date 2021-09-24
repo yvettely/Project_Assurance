@@ -25,6 +25,8 @@ contract AssuranceCharitySaleDeployer {
     address public tokenCharityAddress;
     address public tokenAddress;
 
+    event CharityDeployed (address deployer, uint256 deploymentDate);
+    
     constructor(
         string memory name,
         string memory symbol,
@@ -42,6 +44,8 @@ contract AssuranceCharitySaleDeployer {
        
         AssuranceCharity assurance_sale = new AssuranceCharity(wallet, token, 1);
         tokenCharityAddress = address(assurance_sale);
+        
+        emit CharityDeployed(msg.sender, now);
 
         // make the AssuranceCharity contract a minter, 
         // then have the AssuranceCharitySaleDeployer renounce its minter role
