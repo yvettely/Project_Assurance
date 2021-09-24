@@ -26,7 +26,7 @@ def build_validation_result(is_valid, violated_slot, message_content):
         "message": {"contentType": "PlainText", "content": message_content},
     }
 
-def validate_data(member_ID, intent_request):
+def validate_data(helpOptions, intent_request):
     """
     Validates the data provided by the user.
     """
@@ -108,7 +108,7 @@ def donation_proceeds(intent_request):
     Performs dialog management and fulfillment for showing donation proceeds.
     """
 
-    member_ID = get_slots(intent_request)["MemberID"]
+    helpOptions = get_slots(intent_request)["helpOptions"]
     charity_name = get_slots(intent_request)["charityName"]
     donationTier = get_slots(intent_request)["donationTier"]
     source = intent_request["invocationSource"]
@@ -163,13 +163,14 @@ def donation_proceeds(intent_request):
         "Fulfilled",
         {
             "contentType": "PlainText",
-            "content": """{} , based on your selection, we will need {}
-            """.format(
-                member_ID, initial_recommendation(donationTier)
+            "content": """Based on your selection, we will need {}
+            """.format(initial_recommendation(donationTier)
             ),
         },
     )
 
+
+    
 ### Intents Dispatcher ###
 def dispatch(intent_request):
     """
