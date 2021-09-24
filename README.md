@@ -1,5 +1,11 @@
+
+![Woof World (1)](https://user-images.githubusercontent.com/82069175/134607559-35dd70a3-5b95-4a9f-a8c5-ce86f7cac0af.png)
+![Yellow and Green Travel Portfolio Website (1)](https://user-images.githubusercontent.com/82069175/134607582-19c1cc16-9c34-41f5-94b2-56a3d702d8c7.png)
+
 # Project_Assurance
 Maximum impact, zero waste
+
+
 
 
 Transparent and Genuine Charity Application
@@ -11,4 +17,4 @@ The first step was to create the smart contract this would allow for transaction
 
 
 
-![IMG_8744](https://user-images.githubusercontent.com/82069175/134607474-cd34abad-a34b-495b-94ef-3d8171ec44ec.jpg)
+
