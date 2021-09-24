@@ -7,4 +7,4 @@ Many fake charity organizations pose as genuine and loot money from innocent peo
 
 Within our project we wanted to create and organization that streamlines donations to charities using smart contracts, uses a chatbot to communicate basic answers and status updates as well as processing the transactions with verification available via the blockchain. 
 
-The first step was to create the smart contract this would allow for transactions to go to 1 of the 2 charities we set up called “Woof World” or “Kababayanihan”. ![image](https://user-images.githubusercontent.com/82069175/134600647-f216193d-3f5e-4b8b-8a69-0ad02a358783.png)
+The first step was to create the smart contract this would allow for transactions to go to 1 of the 2 charities we set up called “Woof World” or “Kababayanihan”. 
